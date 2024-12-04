@@ -14,9 +14,4 @@ import java.time.LocalTime;
 public class TimeInterval {
     private LocalTime startTime;
     private LocalTime endTime;
-
-    public boolean includes(LocalTime localTime) {
-        return localTime.equals(startTime) || localTime.isAfter(startTime) &&
-            localTime.equals(endTime) || localTime.isBefore(endTime);
-    }
 }
