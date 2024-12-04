@@ -27,8 +27,7 @@ public class DiscountCondition {
     private PlayTime playTime;
     private Integer sequence;
 
-    public DiscountCondition(Long id, Long policyId, ConditionType conditionType, DayOfWeek dayOfWeek, LocalTime startTime, LocalTime endTime, Integer sequence) {
-        this.id = id;
+    public DiscountCondition(Long policyId, ConditionType conditionType, DayOfWeek dayOfWeek, LocalTime startTime, LocalTime endTime, Integer sequence) {
         this.policyId = policyId;
         this.conditionType = conditionType;
         this.playTime = new PlayTime(dayOfWeek, new TimeInterval(startTime, endTime));
