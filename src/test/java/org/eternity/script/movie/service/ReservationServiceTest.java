@@ -56,6 +56,6 @@ public class ReservationServiceTest {
         Reservation reservation = reservationService.reserveScreening(customerId, screeningId, 2);
 
         // then
-        Assertions.assertEquals(reservation.getFee(), 18000L);
+        Assertions.assertEquals(reservation.getFee(), Money.wons(18000L));
     }
 }
